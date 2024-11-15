@@ -68,7 +68,7 @@ header a:hover:after{
     background-size: cover;
     min-height: 100vh;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@ header a:hover:after{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.7); 
     z-index: 0; 
 }
 
@@ -95,23 +95,24 @@ header a:hover:after{
     color: var(--color);
     text-align: center;
     text-shadow: 1px 1px 30px black;
-    font-size: 6vh;
+    font-size: 10vh;
 }
 
 .Main-Info h2{
     color: var(--secondary-color);
     text-align: center;
     margin-top: 20px;
-    font-size: 3vh;
+    font-size: 2.5vh;
 }
 
 .Main-Info p{
     color: var(--secondary-color);
-    margin-top: 20px;
-    text-align: justify;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-top: 30px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
     text-shadow: 1px 1px 20px black;
+    max-width: 800px;
 }
 .Main-Info-logo img{
     width: 200px;
@@ -135,5 +136,16 @@ making website responsive is my task */
     }
     header div{
         display: none;
+    }
+
+    @media (max-width:520px) {
+        .Main-Info h1{
+            font-size: clamp(20px,5vh,3rem);
+        }
+
+        .Main-Info h2{
+            font-size: clamp(0.7rem,1vh,1rem);
+        }
+        
     }
 }
