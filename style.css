@@ -7,6 +7,7 @@
 :root{
     --color:white;
     --secondary-color:rgb(208, 208, 208);
+    --black-text-color: #333333;
 }
 
 body{
@@ -15,6 +16,17 @@ body{
     font-style: normal;
 }
 
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: darkred;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+}
 
 header{
     position: fixed;
@@ -125,6 +137,63 @@ header a:hover:after{
     padding-bottom: 50px;
 }
 
+.Welcome-Section{
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/* Another Section  */
+.welcome-title-div{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black-text-color);
+    background-color: rgb(248, 248, 248);
+}
+
+.welcome-title-div div{
+    background-color:rgb(248, 248, 248) ;
+}
+
+.welcome-title-div h2{
+    font-size: 3.5vh;
+}
+
+.Welcome-Page-Info{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,auto));
+    padding-top: 50px;
+    padding-bottom: 50px;
+    row-gap: 50px;
+}
+
+
+
+.welcome-bg-image img{
+    width: clamp(400px,40%,500px);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.403);
+}
+
+.welcome-bg-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.welcome-para-div{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+.welcome-para-div p{
+    line-height: 30px;
+    color: #333333;
+}
 
 
 /* All Media quries goes here and i will write media queries myself.
