@@ -184,17 +184,85 @@ header a:hover:after{
 }
 
 
-.welcome-para-div{
+.welcome-para-div, .welcome-para-vision-div{
     padding-left: 30px;
     padding-right: 30px;
     text-align: justify;
 }
 
-.welcome-para-div p{
+.welcome-para-div p, .welcome-para-vision-div p{
     line-height: 30px;
     color: #333333;
 }
 
+.welcome-vision-div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,auto));
+    padding-top: 50px;
+    padding-bottom: 50px;
+    row-gap: 50px;
+}
+
+.welcome-vision-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-vision-img img{
+    width: clamp(300px,50%,600px);
+}
+
+.welcome-para-vision-div h2{
+    color: var(--black-text-color);
+}
+
+.Objective-Section{
+    padding-top: 30px;
+    min-height: 50vh;
+}
+
+.Objective-Section div:first-child{
+    padding-left: 50px;
+    padding-bottom: 30px;
+    color: var(--black-text-color);
+}
+
+.Objective-Section div:last-child{
+    padding-left: 50px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+.Objective-Section li{
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #333333;
+}
+
+.Data-Counter-Section{
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: maroon;
+    color: var(--color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.Data-Counter-Section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Data-Counter-Section h3{
+    font-size: clamp(50px,6vh,3rem);
+}
 
 /* All Media quries goes here and i will write media queries myself.
 making website responsive is my task */
