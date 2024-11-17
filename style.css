@@ -175,7 +175,7 @@ header a:hover:after{
 
 
 .welcome-bg-image img{
-    width: clamp(100px,40%,500px);
+    width: clamp(100px,90%,500px);
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.403);
 }
 
@@ -213,7 +213,7 @@ header a:hover:after{
 }
 
 .welcome-vision-img img{
-    width: clamp(100px,50%,600px);
+    width: clamp(100px,90%,500px);
 }
 
 .welcome-para-vision-div h2{
@@ -266,6 +266,79 @@ header a:hover:after{
     font-size: clamp(50px,6vh,3rem);
 }
 
+
+
+.Events-Section{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 80px;
+    min-height: 100vh;
+
+}
+
+.Events-Section h2{
+    text-align: center;
+    color: var(--black-text-color);
+    font-weight: 700;
+    font-size: 4vh;
+}
+
+
+.Slider-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    flex-direction: column;
+}
+
+.Slider-Container h3{
+    color: var(--black-text-color);
+    margin-top: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 50%;
+    aspect-ratio: 16 /9;
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    transition: transform 1s ease;
+  }
+  
+  .slide-btn{
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .slide-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+
 /* All Media quries goes here and i will write media queries myself.
 making website responsive is my task */
 
@@ -316,6 +389,17 @@ making website responsive is my task */
         .Main-Info-logo img{
             width: 150px;
         }
+
+        .Events-Section h2{
+            font-size: 3vh;
+        }
         
+    }
+
+}
+
+@media (max-width:900px) {
+    .slider{
+        width: 90%;
     }
 }
