@@ -108,6 +108,8 @@ header a:hover:after{
     text-align: center;
     text-shadow: 1px 1px 30px black;
     font-size: 10vh;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .Main-Info h2{
@@ -164,7 +166,7 @@ header a:hover:after{
 .Welcome-Page-Info{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(500px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
     padding-top: 50px;
     padding-bottom: 50px;
     row-gap: 50px;
@@ -173,7 +175,7 @@ header a:hover:after{
 
 
 .welcome-bg-image img{
-    width: clamp(400px,40%,500px);
+    width: clamp(100px,40%,500px);
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.403);
 }
 
@@ -198,7 +200,7 @@ header a:hover:after{
 .welcome-vision-div{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(500px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
     padding-top: 50px;
     padding-bottom: 50px;
     row-gap: 50px;
@@ -211,7 +213,7 @@ header a:hover:after{
 }
 
 .welcome-vision-img img{
-    width: clamp(300px,50%,600px);
+    width: clamp(100px,50%,600px);
 }
 
 .welcome-para-vision-div h2{
@@ -248,7 +250,7 @@ header a:hover:after{
     background-color: maroon;
     color: var(--color);
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
     margin-bottom: 30px;
     margin-top: 30px;
 }
@@ -275,6 +277,33 @@ making website responsive is my task */
         display: none;
     }
 
+    .Main-Info h1{
+        font-size: 5vh;
+    }
+
+    .Main-Info h2{
+        font-size: 1.3vh;
+    }
+
+    .welcome-title-div h2{
+        font-size: 2vh;
+    }
+
+    .Main-Info p{
+        line-height: 30px;
+        font-size: 0.8rem;
+    }
+
+    @media (max-width:620px) {
+        .Data-Counter-Section h3{
+            font-size: 4vh;
+        }
+
+        .Data-Counter-Section label{
+            font-size: 10px;
+        }
+    }
+
     @media (max-width:520px) {
         .Main-Info h1{
             font-size: clamp(20px,5vh,3rem);
@@ -282,6 +311,10 @@ making website responsive is my task */
 
         .Main-Info h2{
             font-size: clamp(0.7rem,1vh,1rem);
+        }
+
+        .Main-Info-logo img{
+            width: 150px;
         }
         
     }
